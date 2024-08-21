@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.text-wrapper {
+    perspective: 1000px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+h1::before,
+h1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    color: inherit;
+    transform: translateZ(-1px);
+    z-index: -1;
+}
+
+h1:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
