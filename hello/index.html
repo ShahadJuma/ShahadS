@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .id-card {
+            width: 300px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .id-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .id-card h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .id-card p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .id-card button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .id-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <img id="profile-pic" src="default-profile.png" alt="Profile Picture">
+        <h2 id="name">John Doe</h2>
+        <p id="title">Software Engineer</p>
+        <p id="email">john.doe@example.com</p>
+        <p id="phone">+123 456 7890</p>
+        <button onclick="updateInfo()">Update Info</button>
+    </div>
+
+    <script>
+        // Example JavaScript to update card information
+        function updateInfo() {
+            // In a real-world scenario, you might fetch this data from an API or a form
+            const newInfo = {
+                name: 'Jane Smith',
+                title: 'Web Developer',
+                email: 'jane.smith@example.com',
+                phone: '+098 765 4321',
+                profilePic: 'jane-smith.png' // Replace with the path to a new profile picture
+            };
+
+            document.getElementById('name').textContent = newInfo.name;
+            document.getElementById('title').textContent = newInfo.title;
+            document.getElementById('email').textContent = newInfo.email;
+            document.getElementById('phone').textContent = newInfo.phone;
+            document.getElementById('profile-pic').src = newInfo.profilePic;
+        }
+    </script>
+</body>
+</html>

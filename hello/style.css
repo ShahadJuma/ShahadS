@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="id-card">
+        <img id="profile-pic" src="default-profile.png" alt="Profile Picture">
+        <h2 id="name">John Doe</h2>
+        <p id="title">Software Engineer</p>
+        <p id="email">john.doe@example.com</p>
+        <p id="phone">+123 456 7890</p>
+        <button onclick="updateInfo()">Update Info</button>
+    </div>
