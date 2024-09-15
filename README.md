@@ -1,2 +1,0 @@
-# ShahadS
-new Repository
