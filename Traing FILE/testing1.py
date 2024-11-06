@@ -9,3 +9,7 @@ width = float(input("Enter the width of the rectangle: "))
 
 # Calculate and display the area
 print("The area of the rectangle is:", calculate_area(length, width))
+
+
+
+

@@ -4,7 +4,7 @@ num2 = 20
 num3 = 30
 
 # Calculate the average
-average = num1 + num2 + num3 / 3  
+average = (num1 + num2 + num3) / 3  
 
 # Display the result
 print("The average of the three numbers is:", average)
