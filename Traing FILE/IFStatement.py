@@ -22,3 +22,11 @@ print("A") if a > b else print("=") if a == b else print("B")
 a = 15
 b = 500
 print("A") if a > b else print("B")
+
+
+age = 18
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
