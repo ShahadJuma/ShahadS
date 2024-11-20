@@ -17,3 +17,8 @@ if a > b and c > a:
 a = 500
 b = 330
 print("A") if a > b else print("=") if a == b else print("B")
+
+
+a = 15
+b = 500
+print("A") if a > b else print("B")
